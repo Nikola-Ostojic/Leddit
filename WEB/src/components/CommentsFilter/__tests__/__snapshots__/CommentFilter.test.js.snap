@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentsFilter component tests Should match snapshot 1`] = `
+<div
+  className="filterContainer"
+>
+  <div
+    className="pagingContainer"
+  >
+    <div
+      className="commentsCountLabel"
+    >
+      <p>
+        Comments count: 
+      </p>
+    </div>
+    <div>
+      <WithStyles(ForwardRef(InputLabel))>
+        Page
+      </WithStyles(ForwardRef(InputLabel))>
+      <div>
+        <WithStyles(ForwardRef(Button))
+          disabled={false}
+          onClick={[Function]}
+        >
+          <ArrowBackIcon />
+        </WithStyles(ForwardRef(Button))>
+        2
+         / 
+        3
+        <WithStyles(ForwardRef(Button))
+          disabled={false}
+          onClick={[Function]}
+        >
+          <ArrowForwardIcon />
+        </WithStyles(ForwardRef(Button))>
+      </div>
+    </div>
+    <div>
+      <WithStyles(ForwardRef(FormControl))
+        className="formControl"
+      >
+        <WithStyles(ForwardRef(InputLabel))>
+          Page size
+        </WithStyles(ForwardRef(InputLabel))>
+        <WithStyles(ForwardRef(Select))
+          onChange={[Function]}
+          value={10}
+        >
+          <WithStyles(ForwardRef(MenuItem))
+            value={1}
+          >
+            1
+          </WithStyles(ForwardRef(MenuItem))>
+          <WithStyles(ForwardRef(MenuItem))
+            value={5}
+          >
+            5
+          </WithStyles(ForwardRef(MenuItem))>
+          <WithStyles(ForwardRef(MenuItem))
+            value={10}
+          >
+            10
+          </WithStyles(ForwardRef(MenuItem))>
+          <WithStyles(ForwardRef(MenuItem))
+            value={20}
+          >
+            20
+          </WithStyles(ForwardRef(MenuItem))>
+          <WithStyles(ForwardRef(MenuItem))
+            value={30}
+          >
+            30
+          </WithStyles(ForwardRef(MenuItem))>
+        </WithStyles(ForwardRef(Select))>
+      </WithStyles(ForwardRef(FormControl))>
+    </div>
+  </div>
+</div>
+`;

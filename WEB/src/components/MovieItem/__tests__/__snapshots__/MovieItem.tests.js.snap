@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieItem component tests Should match snapshot 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="container"
+  onClick={[Function]}
+  raised={true}
+>
+  <WithStyles(ForwardRef(CardContent))>
+    Test
+  </WithStyles(ForwardRef(CardContent))>
+</WithStyles(ForwardRef(Card))>
+`;

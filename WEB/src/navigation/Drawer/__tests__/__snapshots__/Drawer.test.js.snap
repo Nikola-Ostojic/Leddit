@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer component tests Should match snapshot 1`] = `
+<WithStyles(ForwardRef(Drawer))
+  className="makeStyles-drawer-1"
+  classes={
+    Object {
+      "paper": "makeStyles-drawerPaper-2",
+    }
+  }
+  onClose={[Function]}
+  open={true}
+  variant="temporary"
+>
+  <div
+    className="makeStyles-toolbar-3"
+  />
+  <div
+    onClick={[Function]}
+    role="presentation"
+  >
+    <WithStyles(ForwardRef(List))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        onClick={[Function]}
+      >
+        <WithStyles(ForwardRef(ListItemIcon))>
+          <HomeIcon
+            htmlColor="white"
+          />
+        </WithStyles(ForwardRef(ListItemIcon))>
+        <WithStyles(ForwardRef(ListItemText))
+          primary="Home"
+        />
+      </WithStyles(ForwardRef(ListItem))>
+    </WithStyles(ForwardRef(List))>
+    <WithStyles(ForwardRef(Divider)) />
+    <WithStyles(ForwardRef(List))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        onClick={[Function]}
+      >
+        <WithStyles(ForwardRef(ListItemIcon))>
+          <StarIcon
+            htmlColor="white"
+          />
+        </WithStyles(ForwardRef(ListItemIcon))>
+        <WithStyles(ForwardRef(ListItemText))
+          primary="Movies"
+        />
+      </WithStyles(ForwardRef(ListItem))>
+    </WithStyles(ForwardRef(List))>
+  </div>
+</WithStyles(ForwardRef(Drawer))>
+`;

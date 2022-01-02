@@ -1,0 +1,9 @@
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formControl {
+  width: 120px;
+}

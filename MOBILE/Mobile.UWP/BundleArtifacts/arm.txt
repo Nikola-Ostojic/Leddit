@@ -1,0 +1,4 @@
+MainPackage=C:\Users\Aleksa\Desktop\Test\Mobile\Mobile.UWP\bin\ARM\Debug\Mobile.UWP_1.0.0.0_ARM_Debug.appx
+SymbolPackage=C:\Users\Aleksa\Desktop\Test\Mobile\Mobile.UWP\obj\ARM\Debug\Symbols\Mobile.UWP_1.0.0.0_ARM_Debug.appxsym
+ResourcePack=C:\Users\Aleksa\Desktop\Test\Mobile\Mobile.UWP\bin\ARM\Debug\Mobile.UWP_1.0.0.0_scale-100.appx
+ResourcePack=C:\Users\Aleksa\Desktop\Test\Mobile\Mobile.UWP\bin\ARM\Debug\Mobile.UWP_1.0.0.0_scale-400.appx

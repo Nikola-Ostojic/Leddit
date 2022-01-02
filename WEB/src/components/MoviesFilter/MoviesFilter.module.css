@@ -1,0 +1,25 @@
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pagingContainer {
+  width: 100%;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagingContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formControl {
+  width: 120px;
+}

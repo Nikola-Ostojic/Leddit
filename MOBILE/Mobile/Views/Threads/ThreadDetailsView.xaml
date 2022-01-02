@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:Mobile.Views;assembly=Mobile"
+              xmlns:controls="clr-namespace:Mobile.Controls;assembly=Mobile"
+             xmlns:vm="clr-namespace:Mobile.ViewModels.Thread;assembly=Mobile.ViewModels"
+              xmlns:cellView="clr-namespace:Mobile.Views.Threads;assembly=Mobile"
+             x:TypeArguments="vm:ThreadDetailsViewModel"
+             x:Class="Mobile.Views.Threads.ThreadDetailsView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="55" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="Title" FontSize="Large" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" />
+                    <Label x:Name="Author" FontSize="Large" HorizontalTextAlignment="End" Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout>
+                <Frame OutlineColor="Black">
+                    <ScrollView>
+                        <Label x:Name="Content" FontSize="Small" />
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="DeleteThreadButton" Text="Delete"  HorizontalOptions="End" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" Text="Comments:"/>
+                <Label x:Name="CommentsCount" FontSize="Medium" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <controls:PageableListView x:Name="CommentsList" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <cellView:CommentCellView/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </controls:PageableListView>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="CommentTextField"
+            HorizontalOptions="FillAndExpand"
+            IsPassword="False"
+            Placeholder="Comment text" />
+                <Button x:Name="AddCommentButton" Text="Add" HorizontalOptions="End" VerticalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</views:ContentPageBase>

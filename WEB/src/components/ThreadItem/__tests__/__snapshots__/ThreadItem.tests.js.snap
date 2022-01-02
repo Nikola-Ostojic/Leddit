@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThreadItem component tests Should match snapshot 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="container"
+  onClick={[Function]}
+  raised={true}
+>
+  <div
+    className="headerContainer"
+  >
+    <h2>
+      Test
+    </h2>
+    <h2 />
+  </div>
+  <div
+    className="content"
+  >
+    Test
+  </div>
+  <div
+    className="footerContainer"
+  >
+    <h3>
+      Comments 
+    </h3>
+  </div>
+</WithStyles(ForwardRef(Card))>
+`;

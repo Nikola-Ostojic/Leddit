@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase 
+              xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d"
+              xmlns:views="clr-namespace:Mobile.Views;assembly=Mobile"
+              xmlns:controls="clr-namespace:Mobile.Controls;assembly=Mobile"
+              xmlns:cellView="clr-namespace:Mobile.Views.Threads;assembly=Mobile"
+              xmlns:vm="clr-namespace:Mobile.ViewModels.Thread;assembly=Mobile.ViewModels"
+              x:TypeArguments="vm:ThreadViewModel"
+              x:Class="Mobile.Views.Threads.ThreadView">
+    <views:ContentPageBase.ToolbarItems>
+        <ToolbarItem x:Name="AddNewThreadButton" Text="Add thread" />
+    </views:ContentPageBase.ToolbarItems>
+    <views:ContentPageBase.Content>
+        <StackLayout Margin="10">
+            <Entry x:Name="SearchCriteria"
+            Placeholder="Search criteria" />
+            <controls:CustomActivityIndicator x:Name="ActivityIndicator"/>
+            <controls:PageableListView x:Name="ThreadList" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <cellView:ThreadCellView/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </controls:PageableListView>
+        </StackLayout>
+    </views:ContentPageBase.Content>
+</views:ContentPageBase>

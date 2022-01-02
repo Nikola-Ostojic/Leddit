@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateMovie component tests Should match snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <WithStyles(ForwardRef(TextField))
+    fullWidth={true}
+    label="Movie name"
+    margin="normal"
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value=""
+  />
+  <WithStyles(ForwardRef(TextField))
+    fullWidth={true}
+    label="Image url"
+    margin="normal"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <WithStyles(ForwardRef(Button))
+    color="primary"
+    type="submit"
+    variant="contained"
+  >
+    Create movie
+  </WithStyles(ForwardRef(Button))>
+</form>
+`;

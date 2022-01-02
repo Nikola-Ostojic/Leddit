@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppNavigation tests Should match snapshot 1`] = `
+<BrowserRouter>
+  <Connect(withRouter(Navbar))
+    drawerOpen={false}
+    setDrawerOpen={[Function]}
+  />
+  <withRouter(Drawer)
+    drawerOpen={false}
+    setDrawerOpen={[Function]}
+  />
+  <AppRoutes />
+</BrowserRouter>
+`;

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar tests Should match snapshot with undefined user 1`] = `
+<WithStyles(ForwardRef(AppBar))
+  className="makeStyles-appBar-1 links"
+  position="fixed"
+>
+  <WithStyles(ForwardRef(Toolbar))>
+    <WithStyles(ForwardRef(IconButton))
+      aria-label="menu"
+      color="inherit"
+      edge="start"
+      onClick={[Function]}
+    >
+      <MenuIcon />
+    </WithStyles(ForwardRef(IconButton))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-title-2"
+      variant="h6"
+    >
+      Leddit
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Button))
+      color="inherit"
+    >
+      <NavLink
+        to="/auth"
+      >
+        <WithStyles(ForwardRef(Typography))>
+          Login
+        </WithStyles(ForwardRef(Typography))>
+      </NavLink>
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(Toolbar))>
+</WithStyles(ForwardRef(AppBar))>
+`;
+
+exports[`Navbar tests Should match snapshot with user defined 1`] = `
+<WithStyles(ForwardRef(AppBar))
+  className="makeStyles-appBar-1 links"
+  position="fixed"
+>
+  <WithStyles(ForwardRef(Toolbar))>
+    <WithStyles(ForwardRef(IconButton))
+      aria-label="menu"
+      color="inherit"
+      edge="start"
+      onClick={[Function]}
+    >
+      <MenuIcon />
+    </WithStyles(ForwardRef(IconButton))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-title-2"
+      variant="h6"
+    >
+      Leddit
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Button))
+      color="inherit"
+    >
+      <NavLink
+        onClick={[MockFunction]}
+        to="/auth"
+      >
+        <WithStyles(ForwardRef(Typography))>
+          Logout 
+          user
+        </WithStyles(ForwardRef(Typography))>
+      </NavLink>
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(Toolbar))>
+</WithStyles(ForwardRef(AppBar))>
+`;

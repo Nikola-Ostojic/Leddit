@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:Mobile.Views;assembly=Mobile"
+             xmlns:vm="clr-namespace:Mobile.ViewModels.Thread;assembly=Mobile.ViewModels"
+             x:TypeArguments="vm:AddThreadViewModel"
+             x:Class="Mobile.Views.Threads.AddThreadView">
+    <ContentPage.Content>
+        <StackLayout  Margin="10">
+            <Label x:Name="NewThread"  Text="Want to add new thread? Insert both fields below." FontSize="Large" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+            <Entry x:Name="ThreadTitle"
+           IsPassword="false"
+            Placeholder="Thread title" />
+            <Entry x:Name="ThreadContent"
+            IsPassword="False"
+            Placeholder="Thread content" />
+            <Button x:Name="AddThreadButton" Text="Add" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</views:ContentPageBase>

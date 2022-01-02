@@ -1,0 +1,77 @@
+{
+  "extends": [
+    "react-app", 
+    "plugin:react/recommended",
+    "plugin:import/errors", 
+    "plugin:import/warnings",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+    "plugins": ["react", "import"],
+    // Remove this rule later once we add prop types
+    "overrides": [
+      {
+          "files": ["**/*.js"],
+          "rules": {
+              "react/prop-types": "off"
+          }
+      }
+  ],
+    "rules": {
+      "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}],
+      "object-shorthand": "error",
+      // "object-property-newline": "error",
+      "import/newline-after-import": ["error", { "count": 1 }],
+      "arrow-body-style": ["error", "as-needed"],
+      "import/no-named-as-default": 0,
+      "no-console": 1,
+      "quotes": [2, "double", { "avoidEscape": true }],
+      "semi":[2, "always"],
+      "no-multiple-empty-lines": [1, { "max" : 1}],
+      "no-trailing-spaces": 1,
+      "eol-last": 2,
+      "no-unused-vars": 2,
+      "react/prefer-stateless-function": 1,
+      "curly": "error",
+      "keyword-spacing": 1,
+      "indent": [
+        1,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "brace-style": [
+        1,
+        "1tbs"
+      ],
+      "import/order": [
+        1,
+        {
+          "newlines-between": "always-and-inside-groups",
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index"
+          ]
+        }
+      ],
+      "react-hooks/exhaustive-deps": "off",
+      "object-curly-spacing": [2, "always"],
+      "comma-spacing": [2, {"before": false, "after": true}]
+    }
+  }

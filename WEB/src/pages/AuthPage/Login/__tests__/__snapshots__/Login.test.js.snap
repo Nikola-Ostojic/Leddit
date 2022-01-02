@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component tests Should match snapshot 1`] = `
+<div>
+  <h3>
+    Login
+  </h3>
+  <p>
+    To make our lives easier
+  </p>
+  <p>
+    user@levi9.com -- User
+  </p>
+  <p>
+    admin@levi9.com -- Admin
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Email"
+      margin="normal"
+      name="email"
+      onChange={[Function]}
+      required={true}
+      type="email"
+      value=""
+    />
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Password"
+      margin="normal"
+      name="password"
+      onChange={[Function]}
+      required={true}
+      type="password"
+      value=""
+    />
+    <br />
+    <br />
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      type="submit"
+      variant="contained"
+    >
+      Login
+    </WithStyles(ForwardRef(Button))>
+  </form>
+</div>
+`;
+
+exports[`Login component tests Should match snapshot with error 1`] = `
+<div>
+  <h3>
+    Login
+  </h3>
+  <p>
+    To make our lives easier
+  </p>
+  <p>
+    user@levi9.com -- User
+  </p>
+  <p>
+    admin@levi9.com -- Admin
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Email"
+      margin="normal"
+      name="email"
+      onChange={[Function]}
+      required={true}
+      type="email"
+      value=""
+    />
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Password"
+      margin="normal"
+      name="password"
+      onChange={[Function]}
+      required={true}
+      type="password"
+      value=""
+    />
+    <br />
+    <br />
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      type="submit"
+      variant="contained"
+    >
+      Login
+    </WithStyles(ForwardRef(Button))>
+    <p>
+      An error happened
+    </p>
+  </form>
+</div>
+`;

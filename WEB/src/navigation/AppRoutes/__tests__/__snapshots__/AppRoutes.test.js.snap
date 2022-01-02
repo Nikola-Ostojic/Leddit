@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppRoutes test Should match snapshot 1`] = `
+<div
+  className="content"
+>
+  <Switch>
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(withRouter(HomePage))",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(withRouter(ThreadDetailsPage))",
+          "type": [Function],
+        }
+      }
+      path="/threadDetails/:id?"
+    />
+    <Connect(PrivateRoute)
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(withRouter(MoviesPage))",
+          "type": [Function],
+        }
+      }
+      path="/movies"
+    />
+    <Connect(PrivateRoute)
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(MovieDetailsPage)",
+          "type": [Function],
+        }
+      }
+      path="/movieDetails/:id?"
+    />
+    <Connect(PrivateRoute)
+      component={[Function]}
+      path="/createThread"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": [Function],
+            "type": [Function],
+          },
+          "compare": null,
+          "displayName": "Connect(Component)",
+          "type": [Function],
+        }
+      }
+      path="/auth"
+    />
+    <Route
+      component={[Function]}
+      path="*"
+    />
+  </Switch>
+</div>
+`;

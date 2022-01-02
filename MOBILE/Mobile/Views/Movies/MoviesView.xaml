@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase 
+              xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              mc:Ignorable="d"
+              xmlns:views="clr-namespace:Mobile.Views;assembly=Mobile"
+              xmlns:controls="clr-namespace:Mobile.Controls;assembly=Mobile"
+              xmlns:cellView="clr-namespace:Mobile.Views.Movies;assembly=Mobile"
+              xmlns:vm="clr-namespace:Mobile.ViewModels.Movies;assembly=Mobile.ViewModels"
+              x:TypeArguments="vm:MoviesViewModel"
+              x:Class="Mobile.Views.Movies.MoviesView">
+    <views:ContentPageBase.ToolbarItems>
+        <ToolbarItem x:Name="AddNewMovieButton" Text="Add movie" />
+    </views:ContentPageBase.ToolbarItems>
+    <views:ContentPageBase.Content>
+        <StackLayout Margin="10">
+            <Entry x:Name="MovieName"
+            Placeholder="Movie name" />
+    <controls:CustomActivityIndicator x:Name="ActivityIndicator"/>
+      <controls:PageableListView x:Name="MoviesList" HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <cellView:MovieCellView/>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </controls:PageableListView>
+  </StackLayout>
+  </views:ContentPageBase.Content>
+</views:ContentPageBase>

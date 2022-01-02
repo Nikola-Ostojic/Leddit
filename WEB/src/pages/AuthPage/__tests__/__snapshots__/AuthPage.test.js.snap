@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthPage test Should match snapshot when showLogin is false 1`] = `
+<Fragment>
+  <Styled(MuiBox)
+    m={10}
+  >
+    <WithStyles(ForwardRef(Container))>
+      <Connect(Register) />
+      <br />
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        onClick={[Function]}
+        variant="contained"
+      >
+        Already have an account? Login.
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(Container))>
+  </Styled(MuiBox)>
+</Fragment>
+`;
+
+exports[`AuthPage test Should match snapshot when showLogin is true 1`] = `
+<Fragment>
+  <Styled(MuiBox)
+    m={10}
+  >
+    <WithStyles(ForwardRef(Container))>
+      <Connect(withRouter(Login)) />
+      <br />
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        onClick={[Function]}
+        variant="contained"
+      >
+        Don't have an account? Register.
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(Container))>
+  </Styled(MuiBox)>
+</Fragment>
+`;

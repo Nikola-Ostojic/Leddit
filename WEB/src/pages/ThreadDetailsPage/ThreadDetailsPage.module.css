@@ -1,0 +1,26 @@
+.container {
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgb(230, 230, 250);
+}
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  color: darkslateblue;
+}
+
+.comments {
+  padding: 15px;
+}
+
+body {
+  background-color: rgb(230, 230, 250);
+}

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrivateRoute test Should match snapshot when user does exists 1`] = `
+<TestComponent
+  location="/auth"
+/>
+`;
+
+exports[`PrivateRoute test Should match snapshot when user does not exists 1`] = `
+<Redirect
+  to={
+    Object {
+      "pathname": "/auth",
+      "state": Object {
+        "from": "/auth",
+      },
+    }
+  }
+/>
+`;

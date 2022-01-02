@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App tests Should match snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(AppNavigation) />
+  <ToastContainer
+    autoClose={2500}
+    closeButton={[Function]}
+    closeOnClick={true}
+    draggable={true}
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="top-right"
+    role="alert"
+    rtl={false}
+    transition={[Function]}
+  />
+</Provider>
+`;

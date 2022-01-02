@@ -1,0 +1,68 @@
+{
+  "name": "leddit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --verbose --watchAll=false",
+    "test:update": "react-scripts test -u --verbose --watchAll=false",
+    "test:watch": "react-scripts test --verbose",
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "coverage:open": "yarn coverage && opener ./coverage/lcov-report/index.html",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.5.2",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/pickers": "^3.2.7",
+    "axios": "^0.19.2",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.15",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.4.3",
+    "react-toastify": "^6.0.8",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "enzyme-to-json": "^3.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "opener": "^1.5.1",
+    "prettier": "^2.0.1",
+    "react-test-renderer": "^16.9.0"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**",
+      "!**/node_modules/**",
+      "!**/__snapshots__/**",
+      "!**/index.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

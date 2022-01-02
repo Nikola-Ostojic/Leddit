@@ -1,0 +1,16 @@
+﻿using Backend.DAL.Entities;
+using Backend.DAL.Helpers;
+using System.Threading.Tasks;
+
+namespace Backend.Core.Interfaces
+{
+    public interface IThreadService
+    {
+        Task<ThreadEntity> Get(int id);
+        Task<ThreadEntity> GetWithoutUser(int id);
+        Task<Pageable<ThreadEntity>> GetThreads(string searchCriteria, int page, int itemsPerPage);
+        Task<ThreadEntity> Create(ThreadEntity thread);
+        Task<ThreadEntity> Update(ThreadEntity thread);
+        Task Delete(int id);
+    }
+}

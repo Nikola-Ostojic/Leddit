@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register component tests Should match snapshot 1`] = `
+<div>
+  <h3>
+    Register
+  </h3>
+  <form
+    method="POST"
+    onSubmit={[Function]}
+  >
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Username"
+      margin="normal"
+      name="username"
+      onChange={[Function]}
+      required={true}
+      type="text"
+      value=""
+    />
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Email"
+      margin="normal"
+      name="email"
+      onChange={[Function]}
+      required={true}
+      type="email"
+      value=""
+    />
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Password"
+      margin="normal"
+      name="password"
+      onChange={[Function]}
+      required={true}
+      type="password"
+      value=""
+    />
+    <WithStyles(ForwardRef(TextField))
+      fullWidth={true}
+      label="Confirm password"
+      margin="normal"
+      name="confirmPassword"
+      onChange={[Function]}
+      required={true}
+      type="password"
+      value=""
+    />
+    <br />
+    <br />
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      type="submit"
+      variant="contained"
+    >
+      Register
+    </WithStyles(ForwardRef(Button))>
+  </form>
+</div>
+`;

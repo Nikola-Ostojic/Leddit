@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rxui:ReactiveTabbedPage 
+          xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:rxui="clr-namespace:ReactiveUI.XamForms;assembly=ReactiveUI.XamForms"
+          mc:Ignorable="d"
+          xmlns:vm="clr-namespace:Mobile.ViewModels.BottomTabNavigation;assembly=Mobile.ViewModels"
+          x:Name="BottomTabNavigationTabbed"
+          x:TypeArguments="vm:BottomTabNavigationViewModel"
+          x:Class="Mobile.Views.BottomTabNavigation.BottomTabNavigationView">
+  <!-- The padding below on UWP compensates a native margin on the pivot, otherwise elements on the bottom of the screen won't be visible -->
+  <TabbedPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <On Platform="UWP" Value="0,0,0,64" />
+    </OnPlatform>
+  </TabbedPage.Padding>
+</rxui:ReactiveTabbedPage>

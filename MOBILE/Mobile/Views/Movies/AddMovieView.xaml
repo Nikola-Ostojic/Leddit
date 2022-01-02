@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:Mobile.Views;assembly=Mobile"
+             xmlns:vm="clr-namespace:Mobile.ViewModels.Movies;assembly=Mobile.ViewModels"
+             x:TypeArguments="vm:AddMovieViewModel"
+             x:Class="Mobile.Views.Movies.AddMovieView">
+    <ContentPage.Content>
+        <StackLayout  Margin="10">
+            <Label x:Name="NewMovie"  Text="Want to add new movie? Insert both fields below." FontSize="Large" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+            <Entry x:Name="MovieName"
+           IsPassword="false"
+            Placeholder="Movie name" />
+            <Entry x:Name="MovieImageUrl"
+            IsPassword="False"
+            Placeholder="Movie image url" />
+            <Button x:Name="AddMovieButton" Text="Add movie" Padding="0"  HorizontalOptions="EndAndExpand" VerticalOptions="Center"  IsEnabled="true" />
+        </StackLayout>
+    </ContentPage.Content>
+</views:ContentPageBase>

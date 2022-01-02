@@ -1,0 +1,11 @@
+.nav {
+    justify-content: space-between;
+}
+
+.links a {
+    margin-right: 10px;
+    text-decoration: none !important;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}

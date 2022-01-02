@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateComment component tests Should match snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <WithStyles(ForwardRef(TextField))
+    fullWidth={true}
+    label="Comment content"
+    margin="normal"
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value=""
+  />
+  <WithStyles(ForwardRef(Button))
+    color="primary"
+    type="submit"
+    variant="contained"
+  >
+    Create comment
+  </WithStyles(ForwardRef(Button))>
+</form>
+`;

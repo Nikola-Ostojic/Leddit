@@ -1,0 +1,22 @@
+.container {
+    margin-top: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.headerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

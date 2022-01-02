@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Aleksa\Desktop\Test\Mobile\Mobile.UWP\bin\x64\Debug\Mobile.UWP_1.0.0.0_x64_Debug.appx
+SymbolPackage=C:\Users\Aleksa\Desktop\Test\Mobile\Mobile.UWP\obj\x64\Debug\Symbols\Mobile.UWP_1.0.0.0_x64_Debug.appxsym

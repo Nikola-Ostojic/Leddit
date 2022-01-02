@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:Mobile.Views;assembly=Mobile"
+             xmlns:vm="clr-namespace:Mobile.ViewModels.Profile;assembly=Mobile.ViewModels"
+             x:TypeArguments="vm:ProfileViewModel"
+             x:Class="Mobile.Views.Profile.ProfileView">
+  <ContentPage.Content>
+    <StackLayout Margin="10">
+      <Label Text="Profile Screen!"  HorizontalOptions="CenterAndExpand" FontSize="Title"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="User name: "  HorizontalOptions="Start" />
+        <Label x:Name="UserNameLabel"  HorizontalOptions="Start" />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Email: "  HorizontalOptions="Start" />
+        <Label x:Name="EmailLabel"  HorizontalOptions="Start" />
+      </StackLayout>
+      <Button x:Name="LogoutButton" Text="Logout"/>
+    </StackLayout>
+  </ContentPage.Content>
+</views:ContentPageBase>

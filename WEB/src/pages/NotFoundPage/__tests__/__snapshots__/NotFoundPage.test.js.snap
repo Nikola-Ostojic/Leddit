@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundPage component tests Should match snapshot 1`] = `
+<WithStyles(ForwardRef(Container))>
+  Page not found url: 
+  Not existing route
+</WithStyles(ForwardRef(Container))>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentItem component tests Should match snapshot 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="container"
+>
+  <div
+    className="headerContainer"
+  >
+    <p>
+      Test
+    </p>
+    <p />
+  </div>
+</WithStyles(ForwardRef(Card))>
+`;
